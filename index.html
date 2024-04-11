@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación</title>
+    <!-- Enlace al CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos para el footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilos para el div de la imagen */
+        .imagen-container {
+            position: relative; /* Para que los elementos hijos se posicionen relativos a este contenedor */
+            width: 100%;
+            height: 100vh; /* El 100% de la altura del viewport */
+            background-image: url('imagenes/imagen_intro.png');
+            background-size: cover;
+            background-position: center;
+            margin-top: 56px; /* Altura del navbar */
+            margin-bottom: 56px; /* Altura del footer */
+            /* Ajusta estas alturas si el tamaño del navbar o el footer cambia */
+        }
+
+        .contenido {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .contenido h1 {
+            font-size: 3rem;
+        }
+
+        .contenido p {
+            margin-bottom: 20px;
+        }
+
+        .contenido button {
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contenido button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Tiffen Mc</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="imagen-container">
+        <div class="contenido">
+            <h1>Desafiando los límites del universo digital con cada línea escrita.</h1>
+            <p>Explora mi universo digital y descubre los proyectos que he construido con pasión y dedicación. Desde aplicaciones innovadoras hasta soluciones inteligentes, cada proyecto cuenta una historia única de creatividad y habilidad técnica.</p>
+            <a href="proyects.html"><button>Entrar</button></a>
+        </div>
+    </div>
+
+    <div class="footer-wrapper">
+        <footer>
+            <!-- Contenido del footer -->
+            Derechos de autor © 2024 Mi Sitio Web. Todos los derechos reservados.
+        </footer>
+    </div>
+
+    <!-- Enlace al JS de Bootstrap (opcional, para algunos componentes) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

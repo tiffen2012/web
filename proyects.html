@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación</title>
+    <!-- Enlace al CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos para el footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilos para el div de la imagen */
+        .imagen-container {
+            position: relative; /* Para que los elementos hijos se posicionen relativos a este contenedor */
+            width: 100%;
+            height: 100vh; /* El 100% de la altura del viewport */
+            margin-top: 56px; /* Altura del navbar */
+            margin-bottom: 56px; /* Altura del footer */
+            /* Ajusta estas alturas si el tamaño del navbar o el footer cambia */
+        }
+
+        .contenido {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .contenido h1 {
+            font-size: 3rem;
+        }
+
+        .contenido button {
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Tiffen Mc</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="imagen-container">
+        <div class="contenido">
+                    <h3>Aqui encontraras toda la información sobre mis conocimientos de programación </h3>
+                    <br><br><br><br>
+                    <details>
+                        <summary style="border: 2px solid black; background-color: #4494ee; padding: 5px; margin-bottom: 5px;">Frontend</summary>
+                        <div style="display: flex; flex-wrap: wrap;">
+                            <div style="width: calc(50% - 10px); margin-right: 10px; margin-bottom: 10px; border: 2px solid black; padding: 10px;">
+                                <h3>HTML</h3>
+                                <p>Domino el lenguaje de marcado HTML para estructurar y crear contenido web.</p>
+                            </div>
+                            <div style="width: calc(50% - 10px); margin-bottom: 10px; border: 2px solid black; padding: 10px;">
+                                <h3>CSS</h3>
+                                <p>Tengo experiencia en el diseño y la presentación de páginas web con CSS.</p>
+                            </div>
+                            <div style="width: calc(50% - 10px); margin-right: 10px; border: 2px solid black; padding: 10px;">
+                                <h3>JavaScript</h3>
+                                <p>Utilizo JavaScript para agregar interactividad y dinamismo a mis proyectos web.</p>
+                            </div>
+                            <div style="width: calc(50% - 10px); border: 2px solid black; padding: 10px;">
+                                <h3>Sass</h3>
+                                <p>Utilizo Sass para escribir CSS de manera más eficiente y mantener mis estilos.</p>
+                            </div>
+                            <div style="width: 100%; border: 2px solid black; padding: 10px; margin-top: 10px;">
+                                <h3>React</h3>
+                                <p>Domino tanto el desarrollo frontend con React como su uso con Node.js en el backend.</p>
+                            </div>
+                        </div>
+                        <br>
+                    </details>
+                    <details>
+                        <summary style="border: 2px solid black; background-color: #d3a936; padding: 5px; margin-bottom: 5px;">Backend</summary>
+                        <div style="display: flex; flex-wrap: wrap;">
+                            <div style="width: calc(50% - 10px); margin-right: 10px; margin-bottom: 10px; border: 2px solid black; padding: 10px;">
+                                <h3>PHP</h3>
+                                <p>Tengo amplios conocimientos en PHP, incluyendo el uso del framework Symfony para el desarrollo web.</p>
+                            </div>
+                            <div style="width: calc(50% - 10px); margin-bottom: 10px; border: 2px solid black; padding: 10px;">
+                                <h3>Java</h3>
+                                <p>Conozco los conceptos básicos de Java para el desarrollo de aplicaciones empresariales.</p>
+                            </div>
+                            <div style="width: calc(50% - 10px); margin-right: 10px; border: 2px solid black; padding: 10px;">
+                                <h3>Node.js</h3>
+                                <p>Utilizo Node.js para construir aplicaciones de backend y trabajar con JavaScript en el servidor.</p>
+                            </div>
+                        </div>
+                        <br>
+                    </details>
+                    <details>
+                        <summary style="border: 2px solid black; background-color: #8bc34a; padding: 5px; margin-bottom: 5px;">Bases de datos</summary>
+                        <div style="display: flex; flex-wrap: wrap;">
+                            <div style="width: calc(50% - 10px); margin-right: 10px; margin-bottom: 10px; border: 2px solid black; padding: 10px;">
+                                <h3>SQL</h3>
+                                <p>Utilizo SQL para trabajar con bases de datos relacionales y realizar consultas, inserciones y actualizaciones de datos.</p>
+                            </div>
+                            <div style="width: calc(50% - 10px); margin-bottom: 10px; border: 2px solid black; padding: 10px;">
+                                <h3>MongoDB</h3>
+                                <p>Tengo experiencia en el uso de MongoDB, una base de datos NoSQL, para aplicaciones modernas.</p>
+                            </div>
+                        </div>
+                        <br>
+                    </details>
+                    <details>
+                        <summary style="border: 2px solid black; background-color: #009688; padding: 5px; margin-bottom: 5px;">Frameworks y herramientas</summary>
+                        <div style="display: flex; flex-wrap: wrap;">
+                            <div style="width: calc(50% - 10px); margin-right: 10px; margin-bottom: 10px; border: 2px solid black; padding: 10px;">
+                                <h3>WordPress</h3>
+                                <p>Tengo experiencia trabajando con WordPress para crear sitios web y personalizarlos según las necesidades del cliente.</p>
+                            </div>
+                            <div style="width: calc(50% - 10px); margin-bottom: 10px; border: 2px solid black; padding: 10px;">
+                                <h3>Symfony</h3>
+                                <p>Utilizo Symfony como framework PHP para el desarrollo web.</p>
+                            </div>
+                            <div style="width: calc(50% - 10px); margin-right: 10px; border: 2px solid black; padding: 10px;">
+                                <h3>Plugins de migración de sistemas</h3>
+                                <p>Tengo varios conocimientos sobre plugins de migración de sistemas para facilitar la transferencia de datos entre diferentes plataformas.</p>
+                            </div>
+                            <div style="width: calc(50% - 10px); border: 2px solid black; padding: 10px;">
+                                <h3>LDAP</h3>
+                                <p>He trabajado con LDAP para la autenticación y gestión de usuarios en aplicaciones empresariales.</p>
+                            </div>
+                        </div>
+                        <br>
+                    </details>
+                    
+                    <details>
+                        <summary style="border: 2px solid black; background-color: #795548; padding: 5px; margin-bottom: 5px;">Despliegue y seguridad</summary>
+                        <div style="display: flex; flex-wrap: wrap;">
+                            <div style="width: calc(50% - 10px); margin-right: 10px; margin-bottom: 10px; border: 2px solid black; padding: 10px;">
+                                <h3>Despliegue de aplicaciones</h3>
+                                <p>Tengo experiencia en el despliegue de aplicaciones en servidores utilizando diversas tecnologías y herramientas.</p>
+                            </div>
+                            <div style="width: calc(50% - 10px); margin-bottom: 10px; border: 2px solid black; padding: 10px;">
+                                <h3>Protocolos SSL</h3>
+                                <p>Conozco los protocolos SSL para garantizar la seguridad en la comunicación entre clientes y servidores.</p>
+                            </div>
+                        </div>
+                        <br>
+                    </details>
+
+                    <hr>
+                    <a href="index.html">Volver al inicio </a>
+        </div>
+    </div>
+
+    <div class="footer-wrapper">
+        <footer>
+            <!-- Contenido del footer -->
+            Derechos de autor © 2024 Mi Sitio Web. Todos los derechos reservados.
+        </footer>
+    </div>
+
+    <!-- Enlace al JS de Bootstrap (opcional, para algunos componentes) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Script para cerrar detalles cuando se abre otro
+        document.querySelectorAll('details').forEach(function (detail) {
+            detail.addEventListener('toggle', function (event) {
+                if (event.target.open) {
+                    document.querySelectorAll('details').forEach(function (otherDetail) {
+                        if (otherDetail !== event.target && otherDetail.open) {
+                            otherDetail.open = false;
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
